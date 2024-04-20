@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,5 +49,17 @@ public class ConversorDeMonedas {
             }
 
         }
+    }
+
+    public String cambiarMoneda(String monedaOrigen, String monedaDestino, double cantidad) {
+        DecimalFormat df = new DecimalFormat("0.000");
+        double resutado = 0;
+        double valorOrigen = tasaDeCambio.get(monedaOrigen);
+        double valorDestino = tasaDeCambio.get(monedaDestino);
+
+        resutado= (valorDestino/valorOrigen) * (cantidad);
+
+        return String.format("El valor %s [%s] corresponde al valor final de =>>> $%s [%s]\n",
+                df.format(cantidad),monedaOrigen,df.format(resutado),monedaDestino);
     }
 }
