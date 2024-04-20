@@ -30,5 +30,23 @@ public class ConversorDeMonedas {
         JsonObject jsonobj = root.getAsJsonObject();
 
         reqResultado = jsonobj.get("result").getAsString();
+
+        if (!reqResultado.equals("success")){
+            //errores
+        }else{
+            String valoresModenas= String.valueOf(jsonobj.get("conversion_rates"));
+            // Elimina los caracteres de llaves y comas
+            valoresModenas = valoresModenas.replace("{", "").replace("}", "");
+
+            String[] keyValuePairs = valoresModenas.split(",");
+
+            for (String pair : keyValuePairs) {
+                String[] keyValue = pair.split(":");
+                String key = keyValue[0].replace("\"", ""); // Elimina las comillas
+                double value = Double.parseDouble(keyValue[1]);
+                tasaDeCambio.put(key, value);
+            }
+
+        }
     }
 }
