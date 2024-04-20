@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args) throws IOException {
-
+        //Se puede indicar la moneda local para que la herramienta funciones en cualquira que indiques-
         String monedaLocal="DOP";
         String montoConvertido = "**";
         Scanner teclado = new Scanner(System.in);
@@ -25,23 +25,24 @@ public class Main
         String opciones = """
                *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
                Sea bienvenido/a al Conversor de Moneda
-
-               1) Peso a Dólar
-               2) Peso a Euros
-               3) Peso a Libras Esterlinas
-               4) Peso a Yen Japonés
-               5) Peso a Won surcoreano
+                      Moneda local == [%s]
+               1) Moneda Local a Dólar
+               2) Moneda Local a Euros
+               3) Moneda Local a Libras Esterlinas
+               4) Moneda Local a Yen Japonés
+               5) Moneda Local a Won surcoreano
                **** O T R A S  O P C I O N E S ******
-               6) Dólar a Peso
-               7) Euros a Peso
-               8) Libras a Peso
-               9) Yen Japonés a Peso
-               10) Won sul-coreano a Peso
+               6) Dólar a Moneda Local
+               7) Euros a Moneda Local
+               8) Libras a Moneda Local
+               9) Yen Japonés a Moneda Local
+               10) Won sul-coreano a Moneda Local
                0) SALIR
 
                Escriba una opción válida:
-                """;
+                """.formatted(monedaLocal);
 
+        String cadenaParaInput = "Cuàl es el valor en ["+monedaLocal+"] que desea convertir a: ";
         while (opcion!=0) {
             System.out.print(opciones);
             opcion = teclado.nextInt();
@@ -49,54 +50,54 @@ public class Main
             if (opcion>=1 && opcion<=10){
                 switch (opcion){
                     case 1:
-                        System.out.print("Cuál es el valor que desea convertir: ");
+                        System.out.print(cadenaParaInput+"[USD]");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("DOP","USD", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda(monedaLocal,"USD", montoAConvertir);
                         break;
                     case 2:
-                        System.out.print("Cuál es el valor que desea convertir: ");
+                        System.out.print(cadenaParaInput+"[EUR]");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("DOP","EUR", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda(monedaLocal,"EUR", montoAConvertir);
                         break;
                     case 3:
-                        System.out.print("Cuál es el valor en %s que desea convertir: ");
+                        System.out.print(cadenaParaInput+"[GBP]");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("DOP","GBP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda(monedaLocal,"GBP", montoAConvertir);
                         break;
                     case 4:
-                        System.out.print("Cuál es el valor que desea convertir :");
+                        System.out.print(cadenaParaInput+"[JPY]");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("DOP","JPY", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda(monedaLocal,"JPY", montoAConvertir);
                         break;
                     case 5:
-                        System.out.print("Cuál es el valor que desea convertir:  ");
+                        System.out.print(cadenaParaInput+"[KRW]");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("DOP","KRW", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda(monedaLocal,"KRW", montoAConvertir);
                         break;
                     case 6:
-                        System.out.print("Cuál es el valor que desea convertir: ");
+                        System.out.print("Cuál es el valor en [USD] que desea convertir a["+monedaLocal+"]: ");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("USD","DOP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda("USD",monedaLocal, montoAConvertir);
                         break;
                     case 7:
-                        System.out.print("Cuál es el valor que desea convertir a : ");
+                        System.out.print("Cuál es el valor en [EUR] que desea convertir a["+monedaLocal+"]: ");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("EUR","DOP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda("EUR",monedaLocal, montoAConvertir);
                         break;
                     case 8:
-                        System.out.print("Cuál es el valor que desea convertir : ");
+                        System.out.print("Cuál es el valor en [GBP] que desea convertir a["+monedaLocal+"]: ");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("GBP","DOP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda("GBP",monedaLocal, montoAConvertir);
                         break;
                     case 9:
-                        System.out.print("Cuál es el valor que desea convertir :");
+                        System.out.print("Cuál es el valor en [JPY] que desea convertir a["+monedaLocal+"]: ");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("JPY","DOP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda("JPY",monedaLocal, montoAConvertir);
                         break;
                     case 10:
-                        System.out.println("Cuál es el valor que desea convertir : ");
+                        System.out.print("Cuál es el valor en [KRW] que desea convertir a["+monedaLocal+"]: ");
                         montoAConvertir = teclado.nextDouble();
-                        montoConvertido = conversorDeMonedas.cambiarMoneda("KRW","DOP", montoAConvertir);
+                        montoConvertido = conversorDeMonedas.cambiarMoneda("KRW",monedaLocal, montoAConvertir);
                         break;
                 }
                 System.out.println(montoConvertido);
