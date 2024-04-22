@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment="Se adicionan detalles sobre las monedas de origen y destino para la conversion">
+    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +25,18 @@
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "hmsjuan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hmsjuan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/hmsjuan/conversor-de-monedas-v1.0.git",
-    "accountId": "9bdee9c2-23ef-4a55-8dcd-8f10ad4150ed"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hmsjuan/conversor-de-monedas-v1.0.git&quot;,
+    &quot;accountId&quot;: &quot;9bdee9c2-23ef-4a55-8dcd-8f10ad4150ed&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -58,9 +60,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Mi Cloud/OneDrive - Universidad Autonoma de Santo Domingo/Oracle One - 2/Etapa - 2/Challenger/conversor-de-monedas-v1.0",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -136,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713581686984</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo">
+      <option name="closed" value="true" />
+      <created>1713625989291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713625989291</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +170,7 @@
     <MESSAGE value="Adicionamos la funcion cambiarMoneda, que nos permitirá realizar la conversion de las monedas" />
     <MESSAGE value="Creando la estructura para que mediante la eleccion de las opciones se pueda convertir la moneda seleccionada" />
     <MESSAGE value="Se adicionan detalles sobre las monedas de origen y destino para la conversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se adicionan detalles sobre las monedas de origen y destino para la conversion" />
+    <MESSAGE value="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo" />
   </component>
 </project>
