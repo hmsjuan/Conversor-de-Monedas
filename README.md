@@ -19,8 +19,10 @@ Existen algunos proyectos de código abierto que pueden convertir objetos Java a
 Nota
 > Gson se encuentra actualmente en modo de mantenimiento; Se corregirán los errores existentes, pero es probable que no se agreguen funciones nuevas importantes. Si desea agregar una nueva función, primero busque problemas existentes en GitHub o cree uno nuevo para analizar la función y obtener comentarios.
 
-![](https://github.com/hmsjuan/Conversor-de-Monedas/blob/59a915e4938e806ed260fb361f7c18dab03f587e/Capturas/Captura%202.png)
+![](https://raw.githubusercontent.com/hmsjuan/Conversor-de-Monedas/main/Capturas/Captura%202.png)
 
-![](https://github.com/hmsjuan/Conversor-de-Monedas/blob/59a915e4938e806ed260fb361f7c18dab03f587e/Capturas/Captura%201.png)
+![](https://raw.githubusercontent.com/hmsjuan/Conversor-de-Monedas/main/Capturas/Captura%201.png)
 
-![](https://github.com/hmsjuan/Conversor-de-Monedas/blob/59a915e4938e806ed260fb361f7c18dab03f587e/Capturas/Captura%203.png)
+![](https://raw.githubusercontent.com/hmsjuan/Conversor-de-Monedas/main/Capturas/Captura%203.png)
+
+![](https://raw.githubusercontent.com/hmsjuan/Conversor-de-Monedas/main/Capturas/Captura%204.png)
