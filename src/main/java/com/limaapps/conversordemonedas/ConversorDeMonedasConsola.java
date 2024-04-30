@@ -13,7 +13,7 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConversorDeMonedas {
+public class ConversorDeMonedasConsola {
     public String reqResultado = "";
     Map<String, Double> tasaDeCambio = new HashMap<>();
 

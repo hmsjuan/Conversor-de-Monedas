@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment=" Simplificación del código eliminando duplicaciones.&#10; Uso de un bucle do-while para evitar la repetición de código.&#10; Definición de una función para obtener la moneda de destino basada en la opción seleccionada.">
+    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/ConversorDeMonedas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/Utilidades.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedasConsola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/MainConsola.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +54,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Mi Cloud/OneDrive - Universidad Autonoma de Santo Domingo/Oracle One - 2/Etapa - 2/Challenger/conversor-de-monedas-v1.0&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FormularioConversor.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven. [validate].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Mi Cloud/OneDrive - Universidad Autonoma de Santo Domingo/Oracle One - 2/Etapa - 2/Challenger/conversor-de-monedas-v1.0",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.limaapps.conversordemonedas.herrmientas" />
+      <recent name="com.limaapps.conversordemonedas" />
+      <recent name="com.limaapps.conversordemonedas.herremientas" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -154,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713821193284</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=" Simplificación del código eliminando duplicaciones.&#10; Uso de un bucle do-while para evitar la repetición de código.&#10; Definición de una función para obtener la moneda de destino basada en la opción seleccionada.">
+      <option name="closed" value="true" />
+      <created>1714339794263</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714339794263</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI">
+      <option name="closed" value="true" />
+      <created>1714339891132</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714339891132</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +213,7 @@
     <MESSAGE value="Se adicionan detalles sobre las monedas de origen y destino para la conversion" />
     <MESSAGE value="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo" />
     <MESSAGE value=" Simplificación del código eliminando duplicaciones.&#10; Uso de un bucle do-while para evitar la repetición de código.&#10; Definición de una función para obtener la moneda de destino basada en la opción seleccionada." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Simplificación del código eliminando duplicaciones.&#10; Uso de un bucle do-while para evitar la repetición de código.&#10; Definición de una función para obtener la moneda de destino basada en la opción seleccionada." />
+    <MESSAGE value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI" />
   </component>
 </project>

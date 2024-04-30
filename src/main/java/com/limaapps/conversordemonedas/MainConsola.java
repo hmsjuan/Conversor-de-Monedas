@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class Main {
+public class MainConsola {
     public static void main(String[] args) throws IOException {
         String monedaLocal = "DOP";
         Scanner teclado = new Scanner(System.in);
         String monedaDestino;
         String monedaOrigen = "";
 
-        ConversorDeMonedas conversorDeMonedas = new ConversorDeMonedas();
+        ConversorDeMonedasConsola conversorDeMonedas = new ConversorDeMonedasConsola();
         if (!conversorDeMonedas.reqResultado.equals("success")) {
             conversorDeMonedas.obtenerTasasDeCambio(monedaLocal);
         }
