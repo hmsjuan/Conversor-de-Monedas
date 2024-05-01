@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/ConversorDeMonedas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/Utilidades.java" afterDir="false" />
+    <list default="true" id="989978ec-723a-4a58-bd87-a73eb5e7e29f" name="Changes" comment="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/img/monedas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/img/temperatura.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedasConsola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/ConversorDeMonedasConsola.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/FormularioConversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/MainConsola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/MainConsola.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/ConversorDeMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/limaapps/conversordemonedas/herrmientas/ConversorDeMonedas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
   "keyToString": {
     "Application.FormularioConversor.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MainConsola.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven. [validate].executor": "Run",
@@ -67,6 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "338",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -189,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714339891132</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI.">
+      <option name="closed" value="true" />
+      <created>1714490148318</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714490148318</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +225,7 @@
     <MESSAGE value="Se elimino la libreria package com.google.gson, 'JsonParser()' is deprecated, vamos a buscar otra via u otro metodo" />
     <MESSAGE value=" Simplificación del código eliminando duplicaciones.&#10; Uso de un bucle do-while para evitar la repetición de código.&#10; Definición de una función para obtener la moneda de destino basada en la opción seleccionada." />
     <MESSAGE value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI" />
+    <MESSAGE value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionamos un FormularioConversor que nos permitirá el manejo del conversor en modo GUI." />
   </component>
 </project>

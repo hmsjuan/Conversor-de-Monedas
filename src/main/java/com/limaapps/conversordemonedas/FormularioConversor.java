@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Objects;
+import javax.swing.ImageIcon;
 
 public class FormularioConversor {
 
@@ -33,14 +34,15 @@ public class FormularioConversor {
     private JTextField textTEmperaturaCelcius;
     private JTextField textTemperaturaFahrenheit;
     private JLabel lblResultadoMoneda;
+    private JLabel lblTituloMoneda;
 
     //variables Generales
     private String iMonedaOrigen, iMonedaDestino;
     private double resultado, valoraConvertir;
-    private DecimalFormat df = new DecimalFormat("###,###,###.00");
+    private final DecimalFormat df = new DecimalFormat("###,###,###.00");
     private ArrayList<String> historico = new ArrayList<String>();
-    private String monedaLocal="DOP";
-    private ConversorDeMonedas conversor = new ConversorDeMonedas("DOP");
+    private final String monedaLocal="DOP";
+    private final ConversorDeMonedas conversor = new ConversorDeMonedas("DOP");
     private String valorTemporal;
     private String textoResultado="";
 
@@ -50,9 +52,11 @@ public class FormularioConversor {
         framePrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         framePrincipal.pack();
         framePrincipal.setLocale(null);
-        framePrincipal.setSize(650,450);
+        framePrincipal.setSize(700,500);
         framePrincipal.setResizable(false);
         framePrincipal.setVisible(true);
+
+
     }
 
     public FormularioConversor(){
@@ -63,6 +67,14 @@ public class FormularioConversor {
         conversor.ConsultatAPI(lblEstatus);
         utilidades.llenarComboBox(cbMonedaDestino);
         utilidades.llenarComboBox(cbMonedaOrigen);
+
+
+        textTEmperaturaCelcius.setHorizontalAlignment(SwingConstants.CENTER);
+        textTemperaturaFahrenheit.setHorizontalAlignment(SwingConstants.CENTER);
+        textCantidad.setHorizontalAlignment(SwingConstants.RIGHT);
+
+
+
         cbMonedaOrigen.addActionListener(e -> iMonedaOrigen = Objects.requireNonNull(cbMonedaOrigen.getSelectedItem()).toString().substring(0,3));
         cbMonedaDestino.addActionListener(e -> iMonedaDestino = Objects.requireNonNull(cbMonedaDestino.getSelectedItem()).toString().substring(0,3));
 
@@ -128,6 +140,7 @@ public class FormularioConversor {
                 }
             }
         });
+        recargarButton.addActionListener(e -> conversor.ConsultatAPI(lblEstatus));
     }
 
 

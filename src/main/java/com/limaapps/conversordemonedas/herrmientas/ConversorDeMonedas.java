@@ -3,6 +3,7 @@ package com.limaapps.conversordemonedas.herrmientas;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.limaapps.conversordemonedas.Common;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +20,7 @@ public class ConversorDeMonedas {
     private Map<String, Double> tasasDeCambio;
     public HashMap<String, String> listaMonedas = new HashMap<>();
     public boolean convertirMondeda;
+    Common common = new Common();
 
     public ConversorDeMonedas(String monedaLocal) {
         this.monedaLocal = monedaLocal;
@@ -30,7 +32,7 @@ public class ConversorDeMonedas {
     }
 
     public void obtenerTasasDeCambio() throws IOException {
-        String urlStr = "https://api.exchangerate-api.com/v4/latest/" + monedaLocal;
+        String urlStr = common.URLKEYAPPI ;
         URL url = new URL(urlStr);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
@@ -43,6 +45,7 @@ public class ConversorDeMonedas {
             JsonElement jsonElement = jsonParser.parse(responseBodyReader);
             JsonObject jsonObject = jsonElement.getAsJsonObject();
             JsonObject rates = jsonObject.getAsJsonObject("rates");
+
 
             for (Map.Entry<String, JsonElement> entry : rates.entrySet()) {
                 String moneda = entry.getKey();
@@ -64,12 +67,15 @@ public class ConversorDeMonedas {
     }
 
     public void ConsultatAPI(JLabel label)    {
+
         try {
+
             obtenerTasasDeCambio();
+
         } catch (IOException e) {
             Utilidades.mostrarMensaje(label,"Error al obtener las tasas de cambio ("+Utilidades.fachaYHora()+")", Color.red );
              convertirMondeda = false;
-
+            return;
         }
         Utilidades.mostrarMensaje(label, "Tasas de cambio obtenidas exitosamente.("+Utilidades.fachaYHora()+")", Color.BLUE);
         convertirMondeda = true;
